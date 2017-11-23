@@ -5,7 +5,14 @@ import RecipeItem  from './RecipeItem';
 class RecipeList extends Component{
     render(){
         return (
-            <RecipeItem recipes={this.props.recipes}/>
+            this.props.recipes.map((recipe,i) =>{
+                return (
+                    <RecipeItem 
+                        recipe={recipe}
+                        key={i} 
+                    />
+                )
+            })
         )
         
     }
