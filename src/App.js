@@ -12,7 +12,6 @@ class App extends Component {
         <h1> Recipe Now!!!</h1>
         <SearchRecipes/>
         <RecipeList />
-        <FavoriteRecipeList />
       </div>
     );
   }
