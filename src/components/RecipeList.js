@@ -9,7 +9,8 @@ class RecipeList extends Component{
                 return (
                     <RecipeItem 
                         recipe={recipe}
-                        key={i} 
+                        key={i}
+                        favoriteButton={true} 
                     />
                 )
             })
